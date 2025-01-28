@@ -41,6 +41,26 @@
   <link rel="preload" as="image" href="../static/assets/images/hero-slider-5.jpg">
   <link rel="preload" as="image" href="../static/assets/images/hero-slider-6.jpg">
   <link rel="preload" as="image" href="../static/assets/images/hero-slider-7.jpg">
+
+  <style>
+    .why-choose-us {
+        position: relative;
+    }
+
+    .top-left-decor {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 150px;
+    }
+
+    .bottom-right-decor {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 150px;
+    }
+  </style>
 </head>
 
 <body id="top">
@@ -974,55 +994,81 @@ notch interior services, ensuring Seamless execution
         - #EVENT
       -->
 
-      <section class="section event bg-black-10" aria-label="event" style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
-  <div class="container" style="max-width: 800px; text-align: left;">
-    <p class="section-subtitle label-2 text-center" style="margin-bottom: 15px; font-size: 0.8em; color: #E4C590;">Elevating Experiences</p>
-    <h2 class="section-title headline-1 text-center" style="margin-bottom: 30px; font-size: 3.5em; color: #fff;">Why Choose Us?</h2>
+      <section class="section event bg-black-10" aria-label="event" style="display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 40px 20px; position: relative; overflow: hidden;">
+        <!-- Decorative elements -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(45deg, rgba(0,0,0,0.7) 0%, rgba(22,23,24,0.7) 100%); z-index: 1;">
+          <img src="{{ url_for('static', filename='assets/images/488680165dca9104ba1f.svg') }}" class="bottom-right-decor" alt="Decorative element"  style="opacity: 1; filter: none;">
+        </div>
 
+        <div style="position: absolute; top: 20px; left: 20px; width: 150px; height: 150px; background: linear-gradient(45deg, rgba(0,0,0,0.7) 0%, rgba(22,23,24,0.7) 100%); z-index: 1;">
+          <img src="{{ url_for('static', filename='assets/images/44de9cb3d399ac0972b1.svg') }}" class="bottom-right-decor" alt="Decorative element"  style="opacity: 1; filter: none; ">
+        </div>
+        <div style="position: absolute; bottom: 20px; right: 20px; width: 150px; height: 150px; border: 2px solid #E4C590; opacity: 0.2; z-index: 1;">
+        </div>
 
-          <div class="why-choose-us-content" style="padding: 20px;">
-            <ul style="list-style-type: none; padding: 0; font-size: 1.2em; line-height: 1.8;">
-              <li style="margin-bottom: 20px;">
-                <strong style="color: #E4C590; font-size: 1.3em;">Experienced Team:</strong><br>
-                A highly skilled team with years of expertise in interior services.
-              </li>
-              <li style="margin-bottom: 20px;">
-                <strong style="color: #E4C590; font-size: 1.3em;">Customer-Centric Approach:</strong><br>
-                We prioritize your needs, preferences, and satisfaction.
-              </li>
-              <li style="margin-bottom: 20px;">
-                <strong style="color: #E4C590; font-size: 1.3em;">Innovative Design:</strong><br>
-                Cutting-edge concepts tailored to your unique vision.
-              </li>
-              <li style="margin-bottom: 20px;">
-                <strong style="color: #E4C590; font-size: 1.3em;">Comprehensive Solution:</strong><br>
-                We offer a one-stop destination for all interior needs.
-              </li>
-              <li style="margin-bottom: 20px;">
-                <strong style="color: #E4C590; font-size: 1.3em;">Proven Track Record:</strong><br>
-                A portfolio of successfully completed projects across diverse sectors.
-              </li>
-            </ul>
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center; position: relative; z-index: 2; background: rgba(22,23,24,0.8); padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+          <div style="margin-bottom: 50px; position: relative;">
+            <div style="width: 60px; height: 3px; background: #E4C590; margin: 0 auto 20px;"></div>
+            <p class="section-subtitle label-2" style="margin-bottom: 15px; font-size: 0.9em; color: #E4C590; letter-spacing: 2px; text-transform: uppercase;">Elevating Experiences</p>
+            <h2 class="section-title headline-1" style="margin-bottom: 30px; font-size: 3.5em; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Why Choose Us?</h2>
+            <div style="width: 80px; height: 3px; background: #E4C590; margin: 20px auto;"></div>
           </div>
 
-        </div>
-        <!-- Image Content -->
-    <div style="flex: 1; text-align: center;">
-      <img src="../static/assets/images/service-3.jpg" alt="Why Choose Us" style="max-width: 100%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+          <div style="display: flex; gap: 60px; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <!-- Text Content -->
+            <div style="flex: 1; min-width: 300px; max-width: 600px;">
+              <div class="why-choose-us-content" style="padding: 30px; background: rgba(0,0,0,0.2); border-radius: 12px; border: 1px solid rgba(228,197,144,0.1);">
+                <ul style="list-style-type: none; padding: 0; font-size: 1.2em; line-height: 1.8; text-align: left;">
+                  <li style="margin-bottom: 25px; padding-left: 25px; position: relative; transition: transform 0.3s ease;">
+                    <div style="position: absolute; left: 0; top: 8px; width: 8px; height: 8px; background: #E4C590; transform: rotate(45deg);"></div>
+                    <strong style="color: #E4C590; font-size: 1.3em; display: block; margin-bottom: 8px;">Experienced Team</strong>
+                    <span style="color: #fff; opacity: 0.9;">A highly skilled team with years of expertise in interior services.</span>
+                  </li>
+                  <li style="margin-bottom: 25px; padding-left: 25px; position: relative; transition: transform 0.3s ease;">
+                    <div style="position: absolute; left: 0; top: 8px; width: 8px; height: 8px; background: #E4C590; transform: rotate(45deg);"></div>
+                    <strong style="color: #E4C590; font-size: 1.3em; display: block; margin-bottom: 8px;">Customer-Centric Approach</strong>
+                    <span style="color: #fff; opacity: 0.9;">We prioritize your needs, preferences, and satisfaction.</span>
+                  </li>
+                  <li style="margin-bottom: 25px; padding-left: 25px; position: relative; transition: transform 0.3s ease;">
+                    <div style="position: absolute; left: 0; top: 8px; width: 8px; height: 8px; background: #E4C590; transform: rotate(45deg);"></div>
+                    <strong style="color: #E4C590; font-size: 1.3em; display: block; margin-bottom: 8px;">Innovative Design</strong>
+                    <span style="color: #fff; opacity: 0.9;">Cutting-edge concepts tailored to your unique vision.</span>
+                  </li>
+                  <li style="margin-bottom: 25px; padding-left: 25px; position: relative; transition: transform 0.3s ease;">
+                    <div style="position: absolute; left: 0; top: 8px; width: 8px; height: 8px; background: #E4C590; transform: rotate(45deg);"></div>
+                    <strong style="color: #E4C590; font-size: 1.3em; display: block; margin-bottom: 8px;">Comprehensive Solution</strong>
+                    <span style="color: #fff; opacity: 0.9;">We offer a one-stop destination for all interior needs.</span>
+                  </li>
+                  <li style="margin-bottom: 25px; padding-left: 25px; position: relative; transition: transform 0.3s ease;">
+                    <div style="position: absolute; left: 0; top: 8px; width: 8px; height: 8px; background: #E4C590; transform: rotate(45deg);"></div>
+                    <strong style="color: #E4C590; font-size: 1.3em; display: block; margin-bottom: 8px;">Proven Track Record</strong>
+                    <span style="color: #fff; opacity: 0.9;">A portfolio of successfully completed projects across diverse sectors.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-    </div>
-  </div>
+            <!-- Image Content -->
+            <div style="flex: 1; min-width: 300px; max-width: 400px;">
+              <div style="position: relative; padding: 15px; background: rgba(228,197,144,0.1); border-radius: 12px;">
+                <img src="../static/assets/images/service-3.jpg" alt="Why Choose Us" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); transition: transform 0.3s ease;">
+              </div>
+            </div>
+          </div>
+
+          <!-- Add bottom-right image -->
+        </div>
       </section>
 
       <!-- After Why Choose Us section -->
       <section class="gallery section" aria-label="gallery" id="gallery" style="background-color: #161718;">
-  <div class="gallery-container">
-    <div class="gallery-content">
-      <div class="section-subtitle text-center">
-        Our Gallery
-      </div>
+        <div class="gallery-container">
+          <div class="gallery-content">
+            <div class="section-subtitle text-center">
+              Our Gallery
+            </div>
 
-      <h2 class="headline-1 section-title text-center">Captured Moments</h2>
+            <h2 class="headline-1 section-title text-center">Captured Moments</h2>
             <div class="gallery-grid">
               <div class="gallery-item">
                 <div class="card-banner img-holder" style="--width: 200; --height: 280;">
@@ -1041,10 +1087,10 @@ notch interior services, ensuring Seamless execution
 
               </div>
 
+            </div>
           </div>
-        
-  </div>
-</section>
+        </div>
+      </section>
 
 
     </article>
