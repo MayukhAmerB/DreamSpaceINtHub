@@ -60,6 +60,203 @@
         right: 0;
         max-width: 150px;
     }
+
+    @media (max-width: 768px) {
+        /* Mobile Navigation */
+        .header .logo img {
+            width: 60px;
+            height: auto;
+        }
+
+        .navbar-list {
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+        .navbar-item {
+            margin: 10px 0;
+        }
+
+        /* Hero Section */
+        .hero-title {
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-text {
+            font-size: 1rem;
+        }
+
+        /* Service Grid */
+        .grid-list {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        /* Key Services */
+        #key\ services .container {
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        #key\ services .grid-list {
+            grid-template-columns: 1fr;
+        }
+
+        /* Reservation Form */
+        .reservation-form {
+            flex-direction: column;
+        }
+
+        .form-left, .form-right {
+            width: 100%;
+            padding: 30px 15px;
+        }
+
+        /* Gallery Carousel */
+        .gallery-item {
+            flex: 0 0 100%;
+        }
+
+        /* Footer */
+        .footer-top {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        /* General Adjustments */
+        .headline-1 {
+            font-size: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Hide desktop-only elements */
+        .top-left-decor,
+        .bottom-right-decor,
+        .shape {
+            display: none;
+        }
+
+        /* Touch optimization */
+        input, textarea, button {
+            font-size: 16px; /* Prevent zoom on focus */
+        }
+
+        /* Mobile menu adjustments */
+        .navbar {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .header .btn-secondary {
+            display: none;
+        }
+
+        /* Major Clients and About Us adjustments */
+        .feature-item, .about-content {
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .feature-card, .about-banner {
+            width: 100%;
+            max-width: none;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Ensure text doesn't touch borders */
+        .section-text, .card-title, .contact-label {
+            margin: 0 20px;
+        }
+
+        /* Increase border height for all sections */
+        .section {
+            padding: 40px 20px;
+        }
+
+        /* Fix border overlapping */
+        .feature-item {
+            min-height: 300px;
+            margin: 20px 0;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .feature-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+            margin: 15px;
+            box-sizing: border-box;
+            background: rgba(22, 23, 24, 0.8);
+            border: 1px solid rgba(228, 197, 144, 0.1);
+        }
+
+        /* Adjust section spacing */
+        .section {
+            padding: 60px 20px;
+            margin: 20px 0;
+            min-height: auto;
+        }
+
+        /* Container adjustments */
+        .container {
+            padding: 20px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        /* Card content spacing */
+        .card-icon {
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            margin: 15px 0;
+        }
+
+        /* Major Clients section specific */
+        .features.text-center {
+            padding: 40px 0;
+        }
+
+        .grid-list {
+            gap: 30px;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        /* Further mobile optimizations */
+        .hero-title {
+            font-size: 2rem;
+        }
+
+        .section {
+            padding: 40px 15px;
+        }
+
+        .topbar .container {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .topbar-item {
+            margin: 5px 0;
+        }
+    }
   </style>
 </head>
 
@@ -618,58 +815,44 @@ notch interior services, ensuring Seamless execution
         - #Key Services
       -->
 
-      <section class="special-dish text-center" aria-labelledby="dish-label" id="key services">
-
-        <div class="special-dish-banner">
-          <img src="../static/assets/images/shreyak-singh-0j4bisyPo3M-unsplash.jpg" width="940" height="900" loading="lazy" alt="special dish"
-            class="img-cover">
+      <section class="special-dish text-center" aria-labelledby="dish-label" id="key services" style="background: #0d0d0d; padding: 60px 0; display: flex; justify-content: center; align-items: center; width: 100vw; height: auto; border: 2px solid #E4C590;">
+        <div class="container" style="max-width: 1200px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+          <div style="flex: 1; min-width: 300px; max-width: 600px; text-align: center;">
+            <p class="label-2 section-subtitle" style="color: #E4C590; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">Designs for Royalty</p>
+            <div style="width: 60px; height: 3px; background: #E4C590; margin: 0 auto 10px;"></div>
+            <h2 class="headline-1 section-title" style="color: #fff; margin-bottom: 30px; font-size: 3em;">Key Services</h2>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; justify-items: center;">
+              <div style="background-color: #2a2a2a; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+                <h3 style="color: #E4C590; margin-bottom: 10px; font-size: 1.5em;">Residential Interiors</h3>
+                <p style="color: #fff; font-size: 1.1em;">Dream Space Interio Hub offers personalized residential interiors, blending comfort and style to transform living rooms, bedrooms, and kitchens into functional, beautiful spaces.</p>
+              </div>
+              <div style="background-color: #2a2a2a; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+                <h3 style="color: #E4C590; margin-bottom: 10px; font-size: 1.5em;">Commercial Interiors</h3>
+                <p style="color: #fff; font-size: 1.1em;">Dream Space Interio Hub offers functional and inspiring commercial interiors, enhancing productivity and aesthetics for offices, retail spaces, and co-working environments with tailored solutions.</p>
+              </div>
+              <div style="background-color: #2a2a2a; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+                <h3 style="color: #E4C590; margin-bottom: 10px; font-size: 1.5em;">Renovation Services</h3>
+                <p style="color: #fff; font-size: 1.1em;">We transform existing spaces with modern design, quality craftsmanship, and efficient execution, transforming outdated interiors into functional and stylish environments.</p>
+              </div>
+              <div style="background-color: #2a2a2a; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+                <h3 style="color: #E4C590; margin-bottom: 10px; font-size: 1.5em;">Turnkey Projects</h3>
+                <p style="color: #fff; font-size: 1.1em;">At Dream Space Interio Hub, we offer end-to-end interior design and execution services.</p>
+              </div>
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 300px; max-width: 500px; text-align: center;">
+            <img src="../static/assets/images/shreyak-singh-0j4bisyPo3M-unsplash.jpg" width="90%" height="auto" loading="lazy" alt="special dish"
+              style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+          </div>
         </div>
-
-        <div class="special-dish-content bg-black-10">
-  <div class="container">
-
-    <img src="../static/assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
-
-    <p class="section-subtitle label-2">Building Inspirations</p>
-
-    <h2 class="headline-1 section-title">Key Services</h2>
-
-    <p class="section-text">
-      <p style="color: #E4C590; font-size: 1.2em; margin-bottom: 10px;">Residential Interiors</p>
-      <span style="color: white;">
-      Dream Space Interio Hub offers personalized residential interiors, blending comfort and style to transform living rooms, bedrooms, and kitchens into functional, beautiful spaces.
-      </span><br><br>
-
-      <p style="color: #E4C590; font-size: 1.2em; margin-bottom: 10px;">Commercial Interiors</p>
-      <span style="color: white;">
-      Dream Space Interio Hub offers functional and inspiring commercial interiors, enhancing productivity and aesthetics for offices, retail spaces, and co-working environments with tailored solutions.
-      </span><br><br>
-
-      <p style="color: #E4C590; font-size: 1.2em; margin-bottom: 10px;">Renovation Services</p>
-      <span style="color: white;">
-      We transform existing spaces with modern design, quality craftsmanship, and efficient execution, transforming outdated interiors into functional and stylish environments.
-      </span><br><br>
-
-      <p style="color: #E4C590; font-size: 1.2em; margin-bottom: 10px;">Turnkey Projects</p>
-      <span style="color: white;">
-      At Dream Space Interio Hub, we offer end-to-end interior design and execution services.
-      </span><br><br>
-
-      <p style="color: #E4C590; font-size: 1.2em; margin-bottom: 10px;">Custom Furniture and Decor</p>
-      <span style="color: white;">
-      We craft bespoke furniture and decor tailored to your style, combining functionality and aesthetics. From unique furniture pieces to personalized decor elements, we ensure every detail enhances your space's charm.
-      </span>
-
-    </p>
-
-  </div>
-</div>
-
-
-        <img src="../static/assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
-
-        <img src="../static/assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
-
+        <style>
+          .special-dish div:hover {
+            transform: scale(1.05);
+          }
+          .special-dish img:hover {
+            transform: rotate(2deg) scale(1.02);
+          }
+        </style>
       </section>
 
 
@@ -997,11 +1180,9 @@ notch interior services, ensuring Seamless execution
       <section class="section event bg-black-10" aria-label="event" style="display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 40px 20px; position: relative; overflow: hidden;">
         <!-- Decorative elements -->
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(45deg, rgba(0,0,0,0.7) 0%, rgba(22,23,24,0.7) 100%); z-index: 1;">
-          <img src="{{ url_for('static', filename='assets/images/488680165dca9104ba1f.svg') }}" class="bottom-right-decor" alt="Decorative element"  style="opacity: 1; filter: none;">
         </div>
 
         <div style="position: absolute; top: 20px; left: 20px; width: 150px; height: 150px; background: linear-gradient(45deg, rgba(0,0,0,0.7) 0%, rgba(22,23,24,0.7) 100%); z-index: 1;">
-          <img src="{{ url_for('static', filename='assets/images/44de9cb3d399ac0972b1.svg') }}" class="bottom-right-decor" alt="Decorative element"  style="opacity: 1; filter: none; ">
         </div>
         <div style="position: absolute; bottom: 20px; right: 20px; width: 150px; height: 150px; border: 2px solid #E4C590; opacity: 0.2; z-index: 1;">
         </div>
@@ -1061,7 +1242,7 @@ notch interior services, ensuring Seamless execution
       </section>
 
       <!-- After Why Choose Us section -->
-      <section class="gallery section" aria-label="gallery" id="gallery" style="background-color: #161718;">
+      <section class="gallery section" aria-label="gallery" id="gallery" style="background-color: #161718; position: relative;">
         <div class="gallery-container">
           <div class="gallery-content">
             <div class="section-subtitle text-center">
@@ -1069,27 +1250,58 @@ notch interior services, ensuring Seamless execution
             </div>
 
             <h2 class="headline-1 section-title text-center">Captured Moments</h2>
-            <div class="gallery-grid">
-              <div class="gallery-item">
+            <div class="gallery-grid" id="gallery-carousel" style="display: flex; overflow: hidden; justify-content: center;">
+              <div class="gallery-item" style="flex: 0 0 33.33%; transition: transform 0.5s ease;">
                 <div class="card-banner img-holder" style="--width: 200; --height: 280;">
-                  <img src="{{ url_for('static', filename='assets/images/imeg1.jpg') }}" alt="Gallery image 1" class="img-cover">
+                  <img src="{{ url_for('static', filename='assets/images/imeg1.jpg') }}" alt="Gallery image 1" class="img-cover" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
               </div>
-              <div class="gallery-item">
+              <div class="gallery-item" style="flex: 0 0 33.33%; transition: transform 0.5s ease;">
                 <div class="card-banner img-holder" style="--width: 200; --height: 280;">
-                  <img src="{{ url_for('static', filename='assets/images/imeg2.jpg') }}" alt="Gallery image 2" class="img-cover">
+                  <img src="{{ url_for('static', filename='assets/images/imeg2.jpg') }}" alt="Gallery image 2" class="img-cover" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
               </div>
-              <div class="gallery-item">
+              <div class="gallery-item" style="flex: 0 0 33.33%; transition: transform 0.5s ease;">
                 <div class="card-banner img-holder" style="--width: 200; --height: 280;">
-                  <img src="{{ url_for('static', filename='assets/images/imeg3.jpg') }}" alt="Gallery image 3" class="img-cover">
+                  <img src="{{ url_for('static', filename='assets/images/imeg3.jpg') }}" alt="Gallery image 3" class="img-cover" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-
               </div>
-
             </div>
+            <button id="prev-btn" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #fff; font-size: 2em; cursor: pointer;">&#10094;</button>
+            <button id="next-btn" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #fff; font-size: 2em; cursor: pointer;">&#10095;</button>
           </div>
         </div>
+        <script>
+          const images = [
+            'imeg1.jpg', 'imeg2.jpg', 'imeg3.jpg', 'imeh4.jpg', 'imeh5.jpg', 'imeh6.jpg',
+            'imeh7.jpg', 'imeh8.jpg', 'imeh9.jpg', 'imeh10.jpg', 'imeh11.jpg', 'imeh12.jpg'
+          ];
+          let currentIndex = 0;
+
+          document.getElementById('next-btn').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateGallery();
+          });
+
+          document.getElementById('prev-btn').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateGallery();
+          });
+
+          function updateGallery() {
+            const gallery = document.getElementById('gallery-carousel');
+            gallery.innerHTML = '';
+            for (let i = 0; i < 3; i++) {
+              const imgIndex = (currentIndex + i) % images.length;
+              const imgDiv = document.createElement('div');
+              imgDiv.className = 'gallery-item';
+              imgDiv.style.flex = '0 0 33.33%';
+              imgDiv.style.transition = 'transform 0.5s ease';
+              imgDiv.innerHTML = `<div class="card-banner img-holder" style="--width: 200; --height: 280;"><img src="../static/assets/images/${images[imgIndex]}" alt="Gallery image ${imgIndex + 1}" class="img-cover" style="width: 100%; height: 100%; object-fit: cover;"></div>`;
+              gallery.appendChild(imgDiv);
+            }
+          }
+        </script>
       </section>
 
 
@@ -1190,15 +1402,15 @@ notch interior services, ensuring Seamless execution
         <ul class="footer-list">
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+            <a href="#" class="www.facebook.com">Facebook</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+            <a href="#" class="www.instagram.com">Instagram</a>
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+            <a href="#" class="www.x.com">X</a>
           </li>
 
           <li>
@@ -1212,7 +1424,7 @@ notch interior services, ensuring Seamless execution
       <div class="footer-bottom">
 
         <p class="copyright">
-          Dreamspace | Interio Hub
+          Dreamspace | Interio Hub 2025 | All Rights Reserved |Designed and Developed by <a href="https://www.linkedin.com/in/mayukh-bhattacharya-3b8521296/" target="_blank">Mayukh</a>
         </p>
 
       </div>
