@@ -152,12 +152,46 @@
 
         /* Mobile menu adjustments */
         .navbar {
+            position: fixed;
+            top: 0;
+            right: -100%;
             width: 100%;
-            padding: 20px;
+            max-width: 350px;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            z-index: 100;
+            visibility: visible;
+            transition: 0.3s ease-in-out;
         }
 
-        .header .btn-secondary {
-            display: none;
+        .navbar.active {
+            right: 0;
+        }
+
+        .navbar-list {
+            flex-direction: column;
+            padding: 20px 0;
+        }
+
+        .navbar-item {
+            margin: 10px 0;
+        }
+
+        /* Fix mobile menu logo */
+        .navbar .logo {
+            display: block;
+            margin: 20px auto;
+        }
+
+        .navbar .logo img {
+            width: 120px;
+            height: auto;
+            filter: brightness(1);
+            opacity: 1;
+            visibility: visible;
         }
 
         /* Major Clients and About Us adjustments */
@@ -345,7 +379,7 @@
         </button>
 
         <a href="#" class="logo">
-          <img src="../static/assets/images/logo2.jpg" width="80" height="30" alt="Dreamspace - Home">
+          <img src="{{ url_for('static', filename='assets/images/logo2.png') }}" width="120" height="auto" alt="Dreamspace - Home" style="display: block; visibility: visible; opacity: 1;">
         </a>
 
         <ul class="navbar-list">
